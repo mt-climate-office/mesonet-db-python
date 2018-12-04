@@ -1,0 +1,4 @@
+<map id="tds_process_col_fmt" name="tds_process_col_fmt">
+<area shape="rect" id="node2" href="$a00534.html#gad38aa5b9547817854ccba1fcc7855861" title="Get an int16 from the server. " alt="" coords="205,5,336,32"/>
+<area shape="rect" id="node3" href="$a00534.html#gae7d9c4e1a079e1d0aa0252732631e8c4" title="Get N bytes from the buffer and return them in the already allocated space given to us..." alt="" coords="384,5,469,32"/>
+</map>

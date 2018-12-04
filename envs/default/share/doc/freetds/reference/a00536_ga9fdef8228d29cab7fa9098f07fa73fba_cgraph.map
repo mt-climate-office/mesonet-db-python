@@ -1,0 +1,6 @@
+<map id="tds_process_param_result_tokens" name="tds_process_param_result_tokens">
+<area shape="rect" id="node2" href="$a00534.html#ga0cb72d3f6943795c39db1fa692be0a58" title="Return a single byte from the input buffer. " alt="" coords="286,5,389,32"/>
+<area shape="rect" id="node4" href="$a00536.html#gacb3354443bcefe7a500a500a4904cc05" title="process output parameters of a stored procedure. " alt="" coords="243,56,432,83"/>
+<area shape="rect" id="node3" href="$a00534.html#ga410619783bdf2bb60b0f27a5578e0e07" title="Read in one &#39;packet&#39; from the server. " alt="" coords="480,5,608,32"/>
+<area shape="rect" id="node5" href="$a00434.html#ab45c291105027e69836002e1dd586141" title="Write a message to the debug log. " alt="" coords="493,56,595,83"/>
+</map>

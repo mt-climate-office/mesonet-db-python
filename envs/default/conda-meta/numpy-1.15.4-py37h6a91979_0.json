@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "build": "py37h6a91979_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "blas 1.0 mkl",
+    "libgfortran >=3.0.1",
+    "mkl_fft >=1.0.4",
+    "mkl_random",
+    "numpy-base 1.15.4 py37h8a80b8c_0",
+    "python >=3.7,<3.8.0a0",
+    "mkl >=2018.0.3,<2019.0a0"
+  ],
+  "extracted_package_dir": "/usr/local/miniconda3/pkgs/numpy-1.15.4-py37h6a91979_0",
+  "features": "",
+  "files": [],
+  "fn": "numpy-1.15.4-py37h6a91979_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/usr/local/miniconda3/pkgs/numpy-1.15.4-py37h6a91979_0",
+    "type": 1
+  },
+  "md5": "eaf1e2059f922b9337e5d5038a1c1205",
+  "name": "numpy",
+  "package_tarball_full_path": "/usr/local/miniconda3/pkgs/numpy-1.15.4-py37h6a91979_0.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "platform": "darwin",
+  "requested_spec": "numpy=1.15",
+  "size": 36119,
+  "subdir": "osx-64",
+  "timestamp": 1541517696757,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/numpy-1.15.4-py37h6a91979_0.tar.bz2",
+  "version": "1.15.4"
+}

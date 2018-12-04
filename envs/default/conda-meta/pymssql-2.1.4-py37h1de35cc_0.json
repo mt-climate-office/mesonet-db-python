@@ -1,0 +1,98 @@
+{
+  "arch": "x86_64",
+  "build": "py37h1de35cc_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "freetds >=1.0.91,<2.0a0",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/usr/local/miniconda3/pkgs/pymssql-2.1.4-py37h1de35cc_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/_mssql.cpython-37m-darwin.so",
+    "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/pymssql.cpython-37m-darwin.so"
+  ],
+  "fn": "pymssql-2.1.4-py37h1de35cc_0.tar.bz2",
+  "license": "LGPL",
+  "license_family": "LGPL",
+  "link": {
+    "source": "/usr/local/miniconda3/pkgs/pymssql-2.1.4-py37h1de35cc_0",
+    "type": 1
+  },
+  "md5": "f2c32a6c6b9a65c57f1cdafcaf079826",
+  "name": "pymssql",
+  "package_tarball_full_path": "/usr/local/miniconda3/pkgs/pymssql-2.1.4-py37h1de35cc_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/_mssql.cpython-37m-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/concourse/worker/volumes/live/553d1a8e-fa6e-43fc-6276-5d76df3cfc59/volume/pymssql_1535519973043/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "9154b68953fd04fed622c3a7ed1ac4b73558320796ce888703cf3ebbf1fae848",
+        "sha256_in_prefix": "3be1b79b59a67caf1b0ca0b424d3e65700a2cb6062ee984a480aa6f80a1b7ada",
+        "size_in_bytes": 345084
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "aef3dbb0ebcabc6c51d3f16f740cea6cbdd43639cee3cb3932852a597b158059",
+        "sha256_in_prefix": "aef3dbb0ebcabc6c51d3f16f740cea6cbdd43639cee3cb3932852a597b158059",
+        "size_in_bytes": 20265
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "6fa35714cf0d3b80b11e434f5c3378b10d5c1a6a5b34a2aaaf8216c9f28dadbe",
+        "sha256_in_prefix": "6fa35714cf0d3b80b11e434f5c3378b10d5c1a6a5b34a2aaaf8216c9f28dadbe",
+        "size_in_bytes": 2411
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql-2.1.4-py3.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "5b6fe5fe3178959a9bf2b9254193c5bf77eaa63087af07e4fd56f0b07b848651",
+        "sha256_in_prefix": "5b6fe5fe3178959a9bf2b9254193c5bf77eaa63087af07e4fd56f0b07b848651",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pymssql.cpython-37m-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/concourse/worker/volumes/live/553d1a8e-fa6e-43fc-6276-5d76df3cfc59/volume/pymssql_1535519973043/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "9bf0e1acdb9813e5ddca05646e3e38947f3e1f31680cc146b814950c8ebe5df3",
+        "sha256_in_prefix": "f1fa625df3974bb87407c53dca3d4697701708c475675113c092d507d2fc7063",
+        "size_in_bytes": 262260
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "darwin",
+  "requested_spec": "pymssql=2.1",
+  "size": 220411,
+  "subdir": "osx-64",
+  "timestamp": 1535520114384,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/pymssql-2.1.4-py37h1de35cc_0.tar.bz2",
+  "version": "2.1.4"
+}

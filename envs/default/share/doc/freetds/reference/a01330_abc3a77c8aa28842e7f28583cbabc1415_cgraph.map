@@ -1,0 +1,4 @@
+<map id="tds_datain_stream_init" name="tds_datain_stream_init">
+<area shape="rect" id="node2" href="$a01330.html#a04b537d889f7d4c9b9701eb81baf7efd" title="Reads data from network for input stream. " alt="" coords="219,5,395,32"/>
+<area shape="rect" id="node3" href="$a00534.html#gae7d9c4e1a079e1d0aa0252732631e8c4" title="Get N bytes from the buffer and return them in the already allocated space given to us..." alt="" coords="443,5,528,32"/>
+</map>

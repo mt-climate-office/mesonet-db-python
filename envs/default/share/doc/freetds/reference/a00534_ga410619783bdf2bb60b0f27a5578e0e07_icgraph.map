@@ -1,0 +1,5 @@
+<map id="tds_read_packet" name="tds_read_packet">
+<area shape="rect" id="node2" href="$a00534.html#ga0cb72d3f6943795c39db1fa692be0a58" title="Return a single byte from the input buffer. " alt="" coords="181,35,284,61"/>
+<area shape="rect" id="node3" href="$a00534.html#ga221e98a9c8be96ec6c8547891e1b53af" title="Reads a byte from the TDS stream without removing it. " alt="" coords="387,5,467,32"/>
+<area shape="rect" id="node4" href="$a00536.html#ga9fdef8228d29cab7fa9098f07fa73fba" title="Process parameters from networks. " alt="" coords="332,57,521,98"/>
+</map>
