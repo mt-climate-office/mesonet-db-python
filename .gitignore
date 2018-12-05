@@ -106,3 +106,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 .Rproj.user
+
+# Mac trash files
+.DS_Store
+*/.DS_Store
+R/.DS_Store
