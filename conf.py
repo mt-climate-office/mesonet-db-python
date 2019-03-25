@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('./src/provider'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Mesonet DB'
+project = 'Mesonet-DB'
 copyright = '2019, Kyle Bocinsky'
 author = 'Kyle Bocinsky'
 
@@ -145,7 +145,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mesonetdb', 'Mesonet DBMesonet DB Documentation',
+    (master_doc, 'mesonetdb', 'Mesonet DB Documentation',
      [author], 1)
 ]
 

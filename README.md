@@ -1,20 +1,20 @@
 # Mesonet DB
-The `mesonet_db` library provides python utilities supporting the Montana Mesonet database. [Read the docs here.](https://mt-climate-office.github.io/mesonet_db/)
+The `mesonet` library provides python utilities supporting the Montana Mesonet database. [Read the docs here.](https://mt-climate-office.github.io/mesonet_db/)
 
 ## Installation
-The `mesonet_db` library is not yet available on PyPI. Until then, install directly from Github using `pip`:
+The `mesonet` library is not yet available on PyPI. Until then, install directly from Github using `pip`:
 
 ```bash
-pip install git+https://github.com/mt-climate-office/mesonet_db
+pip install git+https://github.com/mt-climate-office/Mesonet-DB
 ```
 
 ## Usage
 
 ### Loading the library
-After installation, load the `mesonet_db` library with a standard import call to the `utils` module:
+After installation, load the `mesonet` library with a standard import call to the `utils` module:
 
 ```python
-import mesonet_db.utils
+import mesonet.utils
 ```
 
 ## Development
@@ -24,7 +24,7 @@ information on PyScaffold see https://pyscaffold.org/.
 First, clone this project and change into the project directory:
 
 ``` bash
-git clone https://github.com/mt-climate-office/mesonet_db
+git clone https://github.com/mt-climate-office/Mesonet-DB
 cd mesonet_db
 ```
 
