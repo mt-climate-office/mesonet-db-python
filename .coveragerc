@@ -1,7 +1,7 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-source = mesonet_db_test
+source = mesonet
 # omit = bad_file.py
 
 [paths]

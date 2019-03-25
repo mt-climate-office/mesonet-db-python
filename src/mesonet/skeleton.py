@@ -6,7 +6,7 @@ console script. To run this script uncomment the following lines in the
 [options.entry_points] section in setup.cfg:
 
     console_scripts =
-         fibonacci = mesonet_db_test.skeleton:run
+         fibonacci = mesonet.skeleton:run
 
 Then run `python setup.py install` which will install the command `fibonacci`
 inside your current environment.
@@ -20,7 +20,7 @@ import argparse
 import sys
 import logging
 
-from mesonet_db_test import __version__
+from mesonet import __version__
 
 __author__ = "R. Kyle Bocinsky"
 __copyright__ = "R. Kyle Bocinsky"
@@ -59,7 +59,7 @@ def parse_args(args):
     parser.add_argument(
         '--version',
         action='version',
-        version='Mesonet-DB-test {ver}'.format(ver=__version__))
+        version='Mesonet-DB {ver}'.format(ver=__version__))
     parser.add_argument(
         dest="n",
         help="n-th Fibonacci number",

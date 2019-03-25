@@ -8,8 +8,8 @@ PAPER         =
 BUILDDIR      = _build
 AUTODOCDIR    = api
 AUTODOCBUILD  = sphinx-apidoc
-PROJECT       = Mesonet-DB-test
-MODULEDIR     = ../src/mesonet_db_test
+PROJECT       = Mesonet-DB
+MODULEDIR     = ../src/mesonet
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $?), 1)

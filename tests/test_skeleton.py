@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from mesonet_db_test.skeleton import fib
+from mesonet.skeleton import fib
 
 __author__ = "R. Kyle Bocinsky"
 __copyright__ = "R. Kyle Bocinsky"

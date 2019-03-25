@@ -1,8 +1,8 @@
-===============
-Mesonet-DB-test
-===============
+==========
+Mesonet-DB
+==========
 
-This is the documentation of **Mesonet-DB-test**.
+This is the documentation of **Mesonet-DB**.
 
 .. note::
 
