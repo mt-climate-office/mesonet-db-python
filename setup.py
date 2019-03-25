@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    Setup file for Mesonet-DB.
+    Setup file for mesonet_db.
     Use setup.cfg to configure your project.
 
     This file was generated with PyScaffold 3.1.
