@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Mesonet-DB
+Version: 0.0.post0.dev14+ga7ce630
+Summary: Add a short description here!
+Home-page: https://pyscaffold.org/
+Author: R. Kyle Bocinsky
+Author-email: bocinsky@gmail.com
+License: mit
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Provides-Extra: testing
