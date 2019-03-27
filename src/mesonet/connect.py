@@ -9,7 +9,7 @@ environment you are running this script in.
 """
 
 import sqlalchemy
-from sqlalchemy.engine import url
+import urllib
 
 
 def connect(username=None, password=None):
@@ -25,8 +25,14 @@ def connect(username=None, password=None):
         The password
 
     """
-    return sqlalchemy.create_engine(url.URL(drivername="mssql+pyodbc",
-                                            username=username,
-                                            password=password,
-                                            host='MCOMesonet'),
+
+    server = "cfcsql17.gs.umt.edu"
+    database = 'MCOMesonet'
+
+    params = urllib.parse.quote_plus('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server +
+                                     ';DATABASE=' + database +
+                                     ';UID=' + username +
+                                     ';PWD=' + password)
+
+    return sqlalchemy.create_engine("mssql+pyodbc:///?odbc_connect=%s" % params,
                                     fast_executemany=True)
