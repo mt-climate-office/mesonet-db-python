@@ -12,6 +12,7 @@ from mesonet.connect import connect
 from zentra.api import *
 # import mesonet.zentra
 import src.mesonet.zentra
+import src.mesonet.write_to_db
 import pandas as pd
 from dfply import *
 from os import getenv
@@ -96,25 +97,15 @@ test = src.mesonet.zentra.ZentraReadings(json_file="./tests/data/Readings2019.03
 
 test_out = test.prepare_raw()
 
-# Delete all rows
-con.execute("DELETE FROM observations.raw")
+src.mesonet.write_to_db.write_to_db(test_out,
+                                    con=con,
+                                    schema="observations",
+                                    table="raw",
+                                    append=True,
+                                    verbose=True
+                                    )
 
-
-
-test_out.replace('NA', np.nan).to_sql(con=con,
-                                      name="raw",
-                                      schema="observations",
-                                      if_exists='append',
-                                      chunksize=np.int(np.floor((2000 / len(test_out.columns)))),
-                                      index=False,
-                                      method='multi')
-
-pd.read_sql_table(con=con,
-                                      table_name="raw",
-                                      schema="observations")
-
-
-test_out.
+warnings.resetwarnings()
 
 test_out.value
 
