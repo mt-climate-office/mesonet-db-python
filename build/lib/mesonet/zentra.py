@@ -59,17 +59,22 @@ class ZentraReadings(zentra.ZentraReadings):
                in enumerate(self.timeseries)]
         out = pd.concat(out)
 
+        out = (out.assign(timeseries=out.timeseries.astype('uint8'),
+                          port=out.port.astype('uint8'),
+                          mrid=out.mrid.astype('uint32'),
+                          units=out.units.str.strip(),
+                          measurement=out.measurement.str.strip(),
+                          value=out.value.astype('float').round(5))
+               .drop_duplicates()
+               .dropna()
+               .sort_values(by=['timeseries', 'port', 'measurement', 'mrid']) \
+               .groupby(by=['timeseries', 'port', 'measurement']))
+
+        out = [out.get_group(x) for x in out.groups]
+        out = [x.assign(datetime=x.datetime.dt.tz_localize("America/Denver", ambiguous='infer')) for x in out]
+        out = pd.concat(out)
+
         return (out
-                .assign(timeseries=out.timeseries.astype('uint8'),
-                        datetime=out.datetime.dt.tz_localize("America/Denver",
-                                                             ambiguous='infer'),
-                        port=out.port.astype('uint8'),
-                        mrid=out.mrid.astype('uint32'),
-                        units=out.units.str.strip(),
-                        measurement=out.measurement.str.strip(),
-                        value=out.value.astype('float').round(5))
-                .drop_duplicates()
-                .dropna()
                 .sort_values(['logger_sn',
                               'timeseries',
                               'mrid',

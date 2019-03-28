@@ -130,6 +130,7 @@ setup.py
 .idea/libraries/R_User_Library.xml
 dist/Mesonet_DB-0.0.post0.dev19+ga00f144.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev21+g1bc2d46.dirty-py3.7.egg
+dist/Mesonet_DB-0.0.post0.dev23+g6c74bf1.dirty-py3.7.egg
 docs/Makefile
 docs/authors.rst
 docs/changelog.rst
@@ -155,4 +156,5 @@ src/mesonet/__pycache__/zentra.cpython-37.pyc
 tests/conftest.py
 tests/test_skeleton.py
 tests/data/Readings2017.06.26.json
+tests/data/Readings2017.11.05.json
 tests/data/Readings2019.03.25.json
