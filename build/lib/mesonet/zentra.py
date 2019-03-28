@@ -66,7 +66,7 @@ class ZentraReadings(zentra.ZentraReadings):
                         mrid=out.mrid.astype('uint32'),
                         units=out.units.str.strip(),
                         measurement=out.measurement.str.strip(),
-                        value=out.value.round(5))
+                        value=out.value.astype('float').round(5))
                 .drop_duplicates()
                 .dropna()
                 .sort_values(['logger_sn',

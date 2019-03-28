@@ -25,12 +25,12 @@ con.execute("DELETE FROM " + schema + "." + table).close()
     #     Path('//mcofiles.cfc.umt.edu/Resources$/Data/Mesonet/ZentraTest/API-Output/ClimateOffice/Readings').glob(
     #         '**/*.json'))
     in list(
-    Path('./tests/data/').glob(
-        '**/*.json'))
+        Path('./tests/data/').glob(
+            '**/*.json'))
 ]
 
 test = ZentraReadings(json_file=Path("./tests/data/Readings2017.06.26.json")).timeseries[0].values
-test\
+test \
     .assign(value=test.value.astype('float').round(5))
 
 write_to_db(ZentraReadings(json_file=Path("./tests/data/Readings2017.06.26.json")).prepare_raw(),
