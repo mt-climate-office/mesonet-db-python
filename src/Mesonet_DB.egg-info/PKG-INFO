@@ -1,13 +1,17 @@
 Metadata-Version: 2.1
 Name: Mesonet-DB
-Version: 0.0.post0.dev14+ga7ce630
-Summary: Add a short description here!
-Home-page: https://pyscaffold.org/
+Version: 0.0.post0.dev19+ga00f144.dirty
+Summary: Python utilities supporting the Montana Mesonet database
+Home-page: https://climate.umt.edu/
 Author: R. Kyle Bocinsky
 Author-email: bocinsky@gmail.com
-License: mit
+License: gpl3
 Description: UNKNOWN
 Platform: any
-Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 3 - Alpha
 Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: User Interfaces
 Provides-Extra: testing
