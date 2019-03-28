@@ -61,7 +61,8 @@ class ZentraReadings(zentra.ZentraReadings):
 
         return (out
                 .assign(timeseries=out.timeseries.astype('uint8'),
-                        datetime=out.datetime.dt.tz_localize("America/Denver"),
+                        datetime=out.datetime.dt.tz_localize("America/Denver",
+                                                             ambiguous='infer'),
                         port=out.port.astype('uint8'),
                         mrid=out.mrid.astype('uint32'),
                         units=out.units.str.strip(),
