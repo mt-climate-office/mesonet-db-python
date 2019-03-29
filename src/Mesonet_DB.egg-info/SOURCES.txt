@@ -135,6 +135,7 @@ dist/Mesonet_DB-0.0.post0.dev24+g1539df0.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev27+gaf14d6b.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev28+g00f22cc.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev29+g2c025fd.dirty-py3.7.egg
+dist/Mesonet_DB-0.0.post0.dev31+g3310a8c.dirty-py3.7.egg
 docs/Makefile
 docs/authors.rst
 docs/changelog.rst
@@ -162,4 +163,6 @@ tests/test_skeleton.py
 tests/data/Readings2017.06.26.json
 tests/data/Readings2017.11.05.json
 tests/data/Readings2018.06.17.json
+tests/data/Readings2018.11.03.json
+tests/data/Readings2018.11.04.json
 tests/data/Readings2019.03.25.json

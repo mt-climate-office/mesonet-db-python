@@ -62,7 +62,7 @@ class ZentraReadings(zentra.ZentraReadings):
         return (out.assign(timeseries=pd.to_numeric(out.timeseries, errors='coerce').astype('uint8'),
                            port=pd.to_numeric(out.port, errors='coerce').astype('uint8'),
                            mrid=pd.to_numeric(out.mrid, errors='coerce').astype('uint32'),
-                           datetime=out.datetime.dt.tz_convert("America/Denver"),
+                           datetime=out.datetime.dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
                            units=out.units.str.strip(),
                            measurement=out.measurement.str.strip(),
                            value=pd.to_numeric(out.value, errors='coerce').round(5))
