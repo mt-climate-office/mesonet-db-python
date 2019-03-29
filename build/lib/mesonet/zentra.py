@@ -59,22 +59,15 @@ class ZentraReadings(zentra.ZentraReadings):
                in enumerate(self.timeseries)]
         out = pd.concat(out)
 
-        out = (out.assign(timeseries=pd.to_numeric(out.timeseries, errors='coerce').astype('uint8'),
-                          port=pd.to_numeric(out.port, errors='coerce').astype('uint8'),
-                          mrid=pd.to_numeric(out.mrid, errors='coerce').astype('uint32'),
-                          units=out.units.str.strip(),
-                          measurement=out.measurement.str.strip(),
-                          value=pd.to_numeric(out.value, errors='coerce').round(5))
-               .drop_duplicates()
-               .dropna()
-               .sort_values(by=['timeseries', 'port', 'measurement', 'mrid']) \
-               .groupby(by=['timeseries', 'port', 'measurement']))
-
-        out = [out.get_group(x) for x in out.groups]
-        out = [x.assign(datetime=x.datetime.dt.tz_localize("America/Denver", ambiguous='infer')) for x in out]
-        out = pd.concat(out)
-
-        return (out
+        return (out.assign(timeseries=pd.to_numeric(out.timeseries, errors='coerce').astype('uint8'),
+                           port=pd.to_numeric(out.port, errors='coerce').astype('uint8'),
+                           mrid=pd.to_numeric(out.mrid, errors='coerce').astype('uint32'),
+                           datetime=out.datetime.dt.tz_convert("America/Denver"),
+                           units=out.units.str.strip(),
+                           measurement=out.measurement.str.strip(),
+                           value=pd.to_numeric(out.value, errors='coerce').round(5))
+                .drop_duplicates()
+                .dropna()
                 .sort_values(['logger_sn',
                               'timeseries',
                               'mrid',
