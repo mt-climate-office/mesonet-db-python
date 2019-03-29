@@ -46,28 +46,12 @@ def write(x):
     #         '**/*.json'))
 ]
 
-# import datetime
-# datetime.dt.tz_localize()
-#
-# test = ZentraReadings(json_file=Path("./tests/data/Readings2017.11.05.json")).timeseries[0].values
-#
-# test = [test.get_group(x) for x in test.groups]
-#
-# [x.assign(datetime=x.datetime.dt.tz_localize("America/Denver", ambiguous='infer')) for x in test]
-#
-#
-# test.groupby(by=['port','description'])['datetime'].apply(lambda x: x.dt.tz_localize("America/Denver", ambiguous='infer'))
-#
-# [gb.get_group(x) for x in gb.groups]
-#
-# test\
-#     .sort_values(by=['port','description','mrid'])\
-#     .groupby(by=['port','description'])\
-#     .assign(datetime=test.dt.tz_localize("America/Denver", ambiguous='infer'))
-#
-# write_to_db(ZentraReadings(json_file=Path("./tests/data/Readings2017.11.05.json")).prepare_raw(),
-#             con=con,
-#             schema="observations",
-#             table="raw",
-#             append=True
-#             )
+
+
+
+write_to_db(ZentraReadings(json_file=Path("./tests/data/Readings2018.06.17.json")).prepare_raw(),
+            con=con,
+            schema="observations",
+            table="raw",
+            append=True
+            )
