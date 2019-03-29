@@ -66,7 +66,7 @@ class ZentraReadings(zentra.ZentraReadings):
                           measurement=out.measurement.str.strip(),
                           value=pd.to_numeric(out.value, errors='coerce').round(5))
                .drop_duplicates()
-               .dropna()
+               # .dropna()
                .sort_values(by=['timeseries', 'port', 'measurement', 'mrid']) \
                .groupby(by=['timeseries', 'port', 'measurement']))
 
