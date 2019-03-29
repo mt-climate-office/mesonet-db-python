@@ -51,7 +51,7 @@ files = Path('//mcofiles.cfc.umt.edu/Resources$/Data/Mesonet/ZentraTest/API-Outp
 
 for file in files:
     try:
-        write(x)
+        write(file)
     except:
         warnings.warn("Something went wrong! Skipping this file.", RuntimeWarning)
         pass
