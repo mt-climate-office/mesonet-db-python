@@ -59,12 +59,12 @@ class ZentraReadings(zentra.ZentraReadings):
                in enumerate(self.timeseries)]
         out = pd.concat(out)
 
-        out = (out.assign(timeseries=out.timeseries.astype('uint8'),
-                          port=out.port.astype('uint8'),
-                          mrid=out.mrid.astype('uint32'),
+        out = (out.assign(timeseries=pd.to_numeric(out.timeseries, errors='coerce').astype('uint8'),
+                          port=pd.to_numeric(out.port, errors='coerce').astype('uint8'),
+                          mrid=pd.to_numeric(out.mrid, errors='coerce').astype('uint32'),
                           units=out.units.str.strip(),
                           measurement=out.measurement.str.strip(),
-                          value=out.value.astype('float').round(5))
+                          value=pd.to_numeric(out.value, errors='coerce').round(5))
                .drop_duplicates()
                .dropna()
                .sort_values(by=['timeseries', 'port', 'measurement', 'mrid']) \

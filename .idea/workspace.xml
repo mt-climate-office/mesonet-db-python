@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4e6dbeb-d977-4537-b424-ecda24beed82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backfill_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/backfill_raw.py" afterDir="false" />
-    </list>
+    <list default="true" id="a4e6dbeb-d977-4537-b424-ecda24beed82" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,16 +221,15 @@
       <workItem from="1553623405197" duration="11220000" />
       <workItem from="1553730059577" duration="10192000" />
       <workItem from="1553810400627" duration="300000" />
-      <workItem from="1553812470828" duration="2030000" />
+      <workItem from="1553812470828" duration="2066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33598000" />
+    <option name="totallyTimeSpent" value="33634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2026862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,8 +245,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.29795918" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.29795918" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
