@@ -14,24 +14,22 @@ token = ZentraToken(username=getenv("zentra_un"),
 
 stations = pd.read_sql(
     sql=" \
-        SELECT x.logger_sn, y.mrid \
-        FROM \
-        ( \
-            SELECT logger_sn \
-            FROM private_data.stations AS stations \
-            JOIN public_data.logger_deployment AS loggers \
-                ON (stations.station_key = loggers.station_key) \
-                AND loggers.date_end IS NULL \
-                AND stations.data_transfer='automated' \
-                AND \
-        ) AS x \
-        LEFT JOIN \
-        ( \
-            SELECT logger_sn, max(mrid) AS mrid \
-            FROM observations.raw \
-            GROUP BY logger_sn \
-        ) y \
-            ON (x.logger_sn = y.logger_sn) \
+SELECT x.logger_sn, y.mrid \
+FROM \
+( \
+    SELECT logger_sn \
+    FROM private_data.stations AS stations \
+    JOIN public_data.logger_deployment AS loggers \
+        ON (stations.station_key = loggers.station_key) \
+        AND loggers.date_end IS NULL AND stations.data_transfer='automated' \
+) AS x \
+LEFT JOIN \
+( \
+    SELECT logger_sn, max(mrid) AS mrid \
+    FROM observations.raw \
+    GROUP BY logger_sn \
+) y \
+    ON (x.logger_sn = y.logger_sn) \
     ",
     con=con).fillna(0).to_dict('records')
 
