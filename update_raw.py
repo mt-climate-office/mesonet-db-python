@@ -47,7 +47,6 @@ stations = pd.read_sql(
 #             append=True
 #             )
 
-
 def write(logger, mrid):
     print(logger)
 
@@ -64,6 +63,8 @@ def write(logger, mrid):
                 table="raw",
                 append=True
                 )
+
+# station = stations[1]
 
 for station in stations:
     try:
