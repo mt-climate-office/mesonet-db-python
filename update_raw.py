@@ -55,7 +55,7 @@ def write(logger, mrid):
                           start_mrid=np.int(mrid))
 
     if len(data.timeseries) == 0:
-        return None
+        return print("No new values available for station.")
 
     write_to_db(data.prepare_raw(),
                 con=con,
