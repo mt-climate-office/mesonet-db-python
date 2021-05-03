@@ -256,6 +256,7 @@ dist/Mesonet_DB-0.0.post0.dev29+g2c025fd.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev31+g3310a8c.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev32+g9fd3cc7.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev43+g7620d67.dirty-py2.py3-none-any.whl
+dist/Mesonet_DB-0.0.post0.dev44+g035126d-py2.py3-none-any.whl
 docs/Makefile
 docs/authors.rst
 docs/changelog.rst
