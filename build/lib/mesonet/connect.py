@@ -26,7 +26,8 @@ def connect(username=None, password=None):
 
     """
 
-    server = "cfcsql17.gs.umt.edu"
+#    server = "cfcsql17.gs.umt.edu"
+    server = "fcfc-sql.cfc.umt.edu"
     database = 'MCOMesonet'
 
     params = urllib.parse.quote_plus('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server +

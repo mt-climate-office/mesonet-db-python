@@ -7,6 +7,8 @@ README.md
 backfill_raw.py
 setup.cfg
 setup.py
+update_raw.bat
+update_raw.py
 .eggs/README.txt
 .eggs/PyScaffold-3.1-py3.7.egg/EGG-INFO/DESCRIPTION.rst
 .eggs/PyScaffold-3.1-py3.7.egg/EGG-INFO/PKG-INFO
@@ -121,10 +123,13 @@ setup.py
 .eggs/PyScaffold-3.1-py3.7.egg/pyscaffold/templates/travis.template
 .eggs/PyScaffold-3.1-py3.7.egg/pyscaffold/templates/travis_install.template
 .idea/Mesonet-DB.iml
+.idea/dataSources.local.xml
+.idea/dataSources.xml
 .idea/encodings.xml
 .idea/misc.xml
 .idea/modules.xml
 .idea/other.xml
+.idea/sqldialects.xml
 .idea/vcs.xml
 .idea/workspace.xml
 .idea/libraries/R_User_Library.xml
@@ -136,6 +141,7 @@ dist/Mesonet_DB-0.0.post0.dev27+gaf14d6b.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev28+g00f22cc.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev29+g2c025fd.dirty-py3.7.egg
 dist/Mesonet_DB-0.0.post0.dev31+g3310a8c.dirty-py3.7.egg
+dist/Mesonet_DB-0.0.post0.dev32+g9fd3cc7.dirty-py3.7.egg
 docs/Makefile
 docs/authors.rst
 docs/changelog.rst
